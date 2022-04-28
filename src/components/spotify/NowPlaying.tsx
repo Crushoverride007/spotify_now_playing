@@ -33,7 +33,7 @@ export const Player: React.FC<IPlayerProps> = ({
       width="466">
       <Text
         id="title"
-        color="#2386DE"
+        color="#c58545"
         size="title"
         weight="bold">
         { isPlaying ? '' : '' }
@@ -73,7 +73,7 @@ export const Player: React.FC<IPlayerProps> = ({
 
           <div
             style={{
-              color: '#2386DE',
+              color: '#c58545',
               display: 'flex',
               flex: 1,
               flexDirection: 'column',
@@ -81,14 +81,14 @@ export const Player: React.FC<IPlayerProps> = ({
               marginTop: -4,
             }}>
             <Text
-              color="#2386DE"
+              color="#c58545"
               id="track"
               weight="bold">
               { `${track ?? ''} `.trim() }
             </Text>
 
             <Text
-              color="#2386DE"
+              color="#c58545"
               id="artist"
               size="small">
               { artist || 'Nothing Currently' }
@@ -206,7 +206,7 @@ export const Player: React.FC<IPlayerProps> = ({
           
           .progress-bar {
             animation-delay: 550ms;
-            border: 1px solid #2386DE;
+            border: 1px solid #c58545;
             border-radius: 4px;
             height: 4px;
             margin: -1px;
@@ -221,7 +221,7 @@ export const Player: React.FC<IPlayerProps> = ({
           #progress {
             animation: progress ${duration}ms linear;
             animation-delay: -${progress}ms;
-            background-color: #2386DE;
+            background-color: #c58545;
             height: 6px;
             left: 0;
             position: absolute;
